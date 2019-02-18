@@ -18,7 +18,7 @@
 #define PROJECT_ID 'M'
 #define CHAR_LOW 33
 #define CHAR_HIGH 126
-#define ITERS 10000000
+#define ITERS 1000000
 
 
 struct message_text {

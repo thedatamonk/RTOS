@@ -1,0 +1,2 @@
+Client (3047442) finished 1000000 requests in 8.04 seconds
+Average Response time: 0.006170 milliseconds
