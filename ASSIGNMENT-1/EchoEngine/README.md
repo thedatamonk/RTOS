@@ -1,5 +1,5 @@
 ## Response times of the EchoEngine server to client requests under different situations.
-Here response time is defined as the time difference between the moment **the client sent the request to the server** and the moment **the client received the response from the server**.
+The EchoEngine server receives a character (as request) from the clients and then reverses the case of the character. For instance, `A -> a` or `d -> D` etc. If the character is not an alphabet then it returns the same character. Here response time is defined as the time difference between the moment **the client sent the request to the server** and the moment **the client received the response from the server**.
 ### 1 client is running
 |   Clients     | Reponse time (ms)  |
 | ------------- | ------------------:|
