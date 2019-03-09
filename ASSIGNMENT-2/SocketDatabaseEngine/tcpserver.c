@@ -84,7 +84,7 @@ void main(){
 					exit(1);
 				}
 
-				printf("Received data from %s: %s\n", clientAddr, buffer);
+				printf("Received request of file %s from %s\n", buffer, clientAddr);
 
 				// openining the file and returnin the contents
 				if ((f_ptr = fopen(buffer, "r")) == NULL){
@@ -102,7 +102,7 @@ void main(){
 					printf("Error sending data!\n");
 					exit(1);
 				}
-				printf("Sent data to %s: %s\n", clientAddr, buffer);
+				printf("Sent contents of requested file to %s\n", clientAddr);
 			}
 		}
 

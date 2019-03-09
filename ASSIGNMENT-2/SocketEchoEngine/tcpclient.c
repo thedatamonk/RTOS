@@ -6,8 +6,9 @@
 #include"netinet/in.h"  
 #include"netdb.h"
 #include <arpa/inet.h>
+#include <time.h>
 
-#define ITERS 1000000
+#define ITERS 1000
 #define PORT 4444
 #define BUF_SIZE 1
 #define CHAR_LOW 33
@@ -20,6 +21,9 @@ int main(int argc, char**argv){
   char buffer;
   struct hostent * server;
   char *serverAddr;
+  clock_t start, end, start_per_req;
+
+  double total_time_elapsed, avg_response_time=0.0;
 
   if (argc < 2){
     printf("usage: client < ip address >\n");
@@ -57,30 +61,46 @@ int main(int argc, char**argv){
   memset(&buffer, 0, BUF_SIZE);
 
 
-  int i=0;
+  int t_step = 0;
 
-  while(i<ITERS){
+  start = clock();
+
+  while(t_step < ITERS){
     buffer = (rand() % (CHAR_HIGH - CHAR_LOW + 1)) + CHAR_LOW; 
 
-    ret = sendto(sockfd, &buffer, BUF_SIZE, 0, (struct sockaddr*)& addr, sizeof(addr));
 
+    start_per_req = clock();
+    ret = sendto(sockfd, &buffer, BUF_SIZE, 0, (struct sockaddr*)& addr, sizeof(addr));
     if (ret < 0){
       printf("Error sending data!\n\t-%c", buffer);
+    }else{
+      printf("Character sent to server is: %c\n", buffer);
     }
-  
+
     ret = recvfrom(sockfd, &buffer, BUF_SIZE, 0, NULL, NULL);  
     if (ret < 0) {  
       printf("Error receiving data!\n");    
     }else{
-      printf("Received: %c", buffer);
-      // fputs(buffer, stdout);
-      printf("\n");
+
+      avg_response_time += ((double) (clock()-start_per_req) / (CLOCKS_PER_SEC / 1000));
+
+      printf("Received converted character from server: %c\n", buffer);
     }  
 
-    i++;
+    t_step++;
   }
 
+  end = clock();
 
-  return 0;
+  total_time_elapsed = ((double) (end - start)) / CLOCKS_PER_SEC;
+
+  avg_response_time /= ITERS;
+
+  printf ("Client finished %d requests in %.2f seconds\n", ITERS, total_time_elapsed);
+  printf ("Average Response time: %f milliseconds\n\n", avg_response_time);
+
+
+
+  exit(0);
 
 }

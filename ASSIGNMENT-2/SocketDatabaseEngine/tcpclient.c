@@ -10,6 +10,7 @@
 #include <unistd.h>
 #include <dirent.h>
 #include <errno.h>
+#include <time.h>
 
 
 #define PORT 4444
@@ -25,6 +26,9 @@ int main(int argc, char**argv){
   char buffer[BUF_SIZE];
   struct hostent * server;
   char *serverAddr;
+  clock_t start, end, start_per_req;
+
+  double total_elapsed_time,  avg_response_time = 0.0;
 
   if (argc < 2){
     printf("usage: client < ip address >\n");
@@ -108,6 +112,11 @@ int main(int argc, char**argv){
   closedir(dr);
 
   i = 0;
+
+  // start timer starts
+
+  start = clock();
+
   
   while(i<NUM_FILES){
 
@@ -121,25 +130,48 @@ int main(int argc, char**argv){
       
       // send message to server
 
+      start_per_req = clock();
+      
+
       ret = sendto(sockfd, buffer, BUF_SIZE, 0, (struct sockaddr* )&addr, sizeof(addr));
       
+
       if (ret < 0){
-        printf("Error sending data!\n\t-%s", buffer);
+        printf("Error requesting file: %s", buffer);
+        exit(1);
+      }else{
+        printf("Client requested %s from server\n", buffer);
       }       
 
       ret = recvfrom(sockfd, buffer, BUF_SIZE, 0, NULL, NULL);
 
       if (ret < 0){
-        printf("Error receiving data!\n");
+        printf("Error while receiving contents of requested file from server!\n");
+        exit(1);
       }else{
-        printf("Received: %s", buffer);
-        printf("\n");
+        
+        avg_response_time += ((double) (clock() - start_per_req)) / (CLOCKS_PER_SEC / 1000);
+
+        if (strcmp(FILE_NOT_EXISTS, buffer) == 0)
+            printf("%s\n\n", buffer);
+        else
+            printf ("Client: The contents of the file are \n%s\n\n", buffer);
+
+
       }
 
       i++;
 
   }
 
-  return 0;
+  end = clock();
 
+  total_elapsed_time = ((double) (end-start)) / (CLOCKS_PER_SEC/ 1000);
+  avg_response_time /= NUM_FILES;
+
+
+  printf ("Client finished %d file requests in %.3f milliseconds\n", NUM_FILES, total_elapsed_time);
+  printf ("Average Response time: %.5f milliseconds\n\n", avg_response_time);
+  
+  exit(0);
 }
