@@ -1,8 +1,8 @@
 # Socket programming
 Implement a client-server architecture using TCP sockets. Experiment with multiple clients and observe how it changes the server response time.
 There are 2 parts we need to solve for this assignment:
-1. Implement an EchoEngine server that changes the case of the character requested by the client. The details can be found [here]().
-2. Implement a DatabaseEngine server that returns the contents of the file requested by the client. The details can be found [here]().
+1. Implement an EchoEngine server that changes the case of the character requested by the client. The details can be found [here](https://github.com/thedatamonk/RTOS/blob/master/ASSIGNMENT-2/SocketEchoEngine/README.md).
+2. Implement a DatabaseEngine server that returns the contents of the file requested by the client. The details can be found [here](https://github.com/thedatamonk/RTOS/blob/master/ASSIGNMENT-2/SocketDatabaseEngine/README.md).
 
 ## Running the code
 - Clone the repository
