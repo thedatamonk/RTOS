@@ -1,0 +1,405 @@
+Socket created...
+Connected to the server...
+Client requested ./db/file_51.txt from server
+Client: The contents of the file are 
+Hello! This is file_51.txt || WPVB0QYIUEK72SS38QMV
+
+Client requested ./db/file_5.txt from server
+Client: The contents of the file are 
+Hello! This is file_5.txt || CA2SIDHFL9EEO8PHF1DY
+
+Client requested ./db/file_73.txt from server
+Client: The contents of the file are 
+Hello! This is file_73.txt || JB0M3JF9HWM59LVQ3VJR
+
+Client requested ./db/file_27.txt from server
+Client: The contents of the file are 
+Hello! This is file_27.txt || 5DSD3OT3IDN4FNR1Y3HE
+
+Client requested ./db/file_67.txt from server
+Client: The contents of the file are 
+Hello! This is file_67.txt || KZYM5H437AE02MLKXD0T
+
+Client requested ./db/file_89.txt from server
+Client: The contents of the file are 
+Hello! This is file_89.txt || A5YGSGF0OX46E4PORHZ3
+
+Client requested ./db/file_43.txt from server
+Client: The contents of the file are 
+Hello! This is file_43.txt || 9TGCDR1RELIJXGDH8I13
+
+Client requested ./db/file_14.txt from server
+Client: The contents of the file are 
+Hello! This is file_14.txt || BTAPXJXA4B6DYJ9JEP62
+
+Client requested ./db/file_93.txt from server
+Client: The contents of the file are 
+Hello! This is file_93.txt || ETI51HD54VS75VFZE3LW
+
+Client requested ./db/file_53.txt from server
+Client: The contents of the file are 
+Hello! This is file_53.txt || IBHYFGFH2EFXEFALNZQU
+
+Client requested ./db/file_65.txt from server
+Client: The contents of the file are 
+Hello! This is file_65.txt || GMUIX0B6N76QJ4Q4EAMH
+
+Client requested ./db/file_78.txt from server
+Client: The contents of the file are 
+Hello! This is file_78.txt || HJA1AEV5KQ49AHSDTD75
+
+Client requested ./db/file_91.txt from server
+Client: The contents of the file are 
+Hello! This is file_91.txt || NVHBEQBTR8M7INER66I8
+
+Client requested ./db/file_20.txt from server
+Client: The contents of the file are 
+Hello! This is file_20.txt || 8HZJSYN3S1VS0SCOUZRQ
+
+Client requested ./db/file_82.txt from server
+Client: The contents of the file are 
+Hello! This is file_82.txt || VD83DQ2G06Z2S0XN84XN
+
+Client requested ./db/file_86.txt from server
+Client: The contents of the file are 
+Hello! This is file_86.txt || 4KGDJM75MEPWOGLZ0LFQ
+
+Client requested ./db/file_70.txt from server
+Client: The contents of the file are 
+Hello! This is file_70.txt || JDX1T6QZ7G9F82PEIETU
+
+Client requested ./db/file_74.txt from server
+Client: The contents of the file are 
+Hello! This is file_74.txt || U0PP1WDAWIS26DK3W824
+
+Client requested ./db/file_17.txt from server
+Client: The contents of the file are 
+Hello! This is file_17.txt || Q4I78GM7YCB9JUFOX53Q
+
+Client requested ./db/file_8.txt from server
+Client: The contents of the file are 
+Hello! This is file_8.txt || I9KLR17783VOIMM93UZ9
+
+Client requested ./db/file_50.txt from server
+Client: The contents of the file are 
+Hello! This is file_50.txt || IGUG2HG4KWFV4I9CE624
+
+Client requested ./db/file_1.txt from server
+Client: The contents of the file are 
+Hello! This is file_1.txt || MJKD56ZW9BJHZQQ8B5NR
+
+Client requested ./db/file_92.txt from server
+Client: The contents of the file are 
+Hello! This is file_92.txt || V2UQ2ATNA4NGXSIGPWL0
+
+Client requested ./db/file_72.txt from server
+Client: The contents of the file are 
+Hello! This is file_72.txt || JRL4Z1VOV73LZS4SXJ79
+
+Client requested ./db/file_41.txt from server
+Client: The contents of the file are 
+Hello! This is file_41.txt || 3Z1OALO89JLKR3T2HYCW
+
+Client requested ./db/file_83.txt from server
+Client: The contents of the file are 
+Hello! This is file_83.txt || PNT4M6P9BOIEROATIM81
+
+Client requested ./db/file_57.txt from server
+Client: The contents of the file are 
+Hello! This is file_57.txt || ZCBV9DYUFT1L43RF3ART
+
+Client requested ./db/file_94.txt from server
+Client: The contents of the file are 
+Hello! This is file_94.txt || 4SU8DD24IOQOZ42GPOEJ
+
+Client requested ./db/file_44.txt from server
+Client: The contents of the file are 
+Hello! This is file_44.txt || 65YLVXN9BHYZ4AXAYR3X
+
+Client requested ./db/file_88.txt from server
+Client: The contents of the file are 
+Hello! This is file_88.txt || WF2YTEU2ZNQSLITZFTKM
+
+Client requested ./db/file_55.txt from server
+Client: The contents of the file are 
+Hello! This is file_55.txt || 5NO3QV48JG2P39QQLTIT
+
+Client requested ./db/file_84.txt from server
+Client: The contents of the file are 
+Hello! This is file_84.txt || 4FDTZ3BMD0XGEB168BID
+
+Client requested ./db/file_77.txt from server
+Client: The contents of the file are 
+Hello! This is file_77.txt || 1YOQC1BKAUV91H9FNE3U
+
+Client requested ./db/file_42.txt from server
+Client: The contents of the file are 
+Hello! This is file_42.txt || R91ATA0A2Z8C5BVAZR34
+
+Client requested ./db/file_34.txt from server
+Client: The contents of the file are 
+Hello! This is file_34.txt || EVTAA0K9BYX0HQYV01MC
+
+Client requested ./db/file_30.txt from server
+Client: The contents of the file are 
+Hello! This is file_30.txt || GEGTRQKHGNAJHWFRCDGN
+
+Client requested ./db/file_7.txt from server
+Client: The contents of the file are 
+Hello! This is file_7.txt || TWL8X4E8F1IDK8M55X5G
+
+Client requested ./db/file_85.txt from server
+Client: The contents of the file are 
+Hello! This is file_85.txt || 2WBFKC35PDIQ9MQK3H2X
+
+Client requested ./db/file_15.txt from server
+Client: The contents of the file are 
+Hello! This is file_15.txt || 8QT8YNU0YBVZZQUD6R31
+
+Client requested ./db/file_46.txt from server
+Client: The contents of the file are 
+Hello! This is file_46.txt || CDAOJHK48BV7IHGK6NNE
+
+Client requested ./db/file_76.txt from server
+Client: The contents of the file are 
+Hello! This is file_76.txt || 53HL4L7FMXQWKY8LBBGW
+
+Client requested ./db/file_60.txt from server
+Client: The contents of the file are 
+Hello! This is file_60.txt || EKYV5C6XRWN9ROQH4P1T
+
+Client requested ./db/file_40.txt from server
+Client: The contents of the file are 
+Hello! This is file_40.txt || XY7A5T5WOVD25RTXHHYV
+
+Client requested ./db/file_66.txt from server
+Client: The contents of the file are 
+Hello! This is file_66.txt || 0GZ3T2F2AG2UD548YISF
+
+Client requested ./db/file_25.txt from server
+Client: The contents of the file are 
+Hello! This is file_25.txt || GR88RV45TSR6TCIEMZG0
+
+Client requested ./db/file_90.txt from server
+Client: The contents of the file are 
+Hello! This is file_90.txt || 2F0JNBN0VG2HC9S381DY
+
+Client requested ./db/file_56.txt from server
+Client: The contents of the file are 
+Hello! This is file_56.txt || CJCLHC8ZWHDE4A5HKQMG
+
+Client requested ./db/file_33.txt from server
+Client: The contents of the file are 
+Hello! This is file_33.txt || LAYYP24MU449ZZMUU8BR
+
+Client requested ./db/file_62.txt from server
+Client: The contents of the file are 
+Hello! This is file_62.txt || 2QA8BZN3GWZQC81RFGNC
+
+Client requested ./db/file_6.txt from server
+Client: The contents of the file are 
+Hello! This is file_6.txt || AQXEJ8MU74MKNKVXDMKC
+
+Client requested ./db/file_96.txt from server
+Client: The contents of the file are 
+Hello! This is file_96.txt || 8CF4JY2FQ4RV15VQOZ23
+
+Client requested ./db/file_19.txt from server
+Client: The contents of the file are 
+Hello! This is file_19.txt || AR2KKMKNA6YX12FIKD3Z
+
+Client requested ./db/file_11.txt from server
+Client: The contents of the file are 
+Hello! This is file_11.txt || 3IFL0I5XXEPI5GPG1SIG
+
+Client requested ./db/file_3.txt from server
+Client: The contents of the file are 
+Hello! This is file_3.txt || V1N5A09JA10YR39YFFEY
+
+Client requested ./db/file_35.txt from server
+Client: The contents of the file are 
+Hello! This is file_35.txt || R76E8FSUVDB7TLHMU02S
+
+Client requested ./db/file_18.txt from server
+Client: The contents of the file are 
+Hello! This is file_18.txt || CZUJ2EDC7RRO6ANDXXMZ
+
+Client requested ./db/file_69.txt from server
+Client: The contents of the file are 
+Hello! This is file_69.txt || 2RLW07BXP1Q04LGH0YTY
+
+Client requested ./db/file_59.txt from server
+Client: The contents of the file are 
+Hello! This is file_59.txt || Z4PWY5X4M160JUNF919X
+
+Client requested ./db/file_37.txt from server
+Client: The contents of the file are 
+Hello! This is file_37.txt || S5RZV5ELDDBN7MH0Y2X7
+
+Client requested ./db/file_2.txt from server
+Client: The contents of the file are 
+Hello! This is file_2.txt || AXX8K2HCZ7W8KVFA7EFE
+
+Client requested ./db/file_100.txt from server
+Client: The contents of the file are 
+Hello! This is file_100.txt || 6N9Q3KAS8QYFU1XCZ6V2
+
+Client requested ./db/file_64.txt from server
+Client: The contents of the file are 
+Hello! This is file_64.txt || XEVB38OHPCDIW9N2VNEX
+
+Client requested ./db/file_54.txt from server
+Client: The contents of the file are 
+Hello! This is file_54.txt || M7P20JLCVA15EJ2K5OTF
+
+Client requested ./db/file_29.txt from server
+Client: The contents of the file are 
+Hello! This is file_29.txt || TL8SRL095EEE6PJ16XHQ
+
+Client requested ./db/file_45.txt from server
+Client: The contents of the file are 
+Hello! This is file_45.txt || P0GNV2T9YSDB2NDKPS69
+
+Client requested ./db/file_97.txt from server
+Client: The contents of the file are 
+Hello! This is file_97.txt || AFWECW8VN50BRBA8PZ25
+
+Client requested ./db/file_26.txt from server
+Client: The contents of the file are 
+Hello! This is file_26.txt || OS2BU50EO1FNRT09AGRG
+
+Client requested ./db/file_39.txt from server
+Client: The contents of the file are 
+Hello! This is file_39.txt || 2PHOBU5EGQ1KBQOQK0OO
+
+Client requested ./db/file_48.txt from server
+Client: The contents of the file are 
+Hello! This is file_48.txt || QWVPHLDH2O77G8N2TAS1
+
+Client requested ./db/file_16.txt from server
+Client: The contents of the file are 
+Hello! This is file_16.txt || T4TE92WUH9K7C2TP3D0E
+
+Client requested ./db/file_47.txt from server
+Client: The contents of the file are 
+Hello! This is file_47.txt || ND41D63Q5S1721RQV2L7
+
+Client requested ./db/file_4.txt from server
+Client: The contents of the file are 
+Hello! This is file_4.txt || I2A4LF8OH9F3QTG2TRU6
+
+Client requested ./db/file_9.txt from server
+Client: The contents of the file are 
+Hello! This is file_9.txt || R6FBL5VVMZIR79PM5L0Z
+
+Client requested ./db/file_81.txt from server
+Client: The contents of the file are 
+Hello! This is file_81.txt || 80T7OXMNM2V5DRPKNIKG
+
+Client requested ./db/file_68.txt from server
+Client: The contents of the file are 
+Hello! This is file_68.txt || V43RFJE5BHJGG2G17ARH
+
+Client requested ./db/file_95.txt from server
+Client: The contents of the file are 
+Hello! This is file_95.txt || ADVYTTY7PP53KGD3SQ80
+
+Client requested ./db/file_71.txt from server
+Client: The contents of the file are 
+Hello! This is file_71.txt || J5EYA7SEZ7UJTNGQNPZU
+
+Client requested ./db/file_23.txt from server
+Client: The contents of the file are 
+Hello! This is file_23.txt || Z3DG1X25MGU8K3RRTGKI
+
+Client requested ./db/file_24.txt from server
+Client: The contents of the file are 
+Hello! This is file_24.txt || 58NXJZ9UCIKETYSSNSJD
+
+Client requested ./db/file_63.txt from server
+Client: The contents of the file are 
+Hello! This is file_63.txt || BVIWTTPILC3SQZOAIIQB
+
+Client requested ./db/file_52.txt from server
+Client: The contents of the file are 
+Hello! This is file_52.txt || QWBKEDD1NF39IN4UO2SO
+
+Client requested ./db/file_75.txt from server
+Client: The contents of the file are 
+Hello! This is file_75.txt || DOLAY7CS7OCLIVZG400O
+
+Client requested ./db/file_38.txt from server
+Client: The contents of the file are 
+Hello! This is file_38.txt || J0253RSONNXSTTK7VQ2O
+
+Client requested ./db/file_10.txt from server
+Client: The contents of the file are 
+Hello! This is file_10.txt || W0I8R68AZSCXDTZHMI3D
+
+Client requested ./db/file_87.txt from server
+Client: The contents of the file are 
+Hello! This is file_87.txt || 6IX83BN6B4HD8K8MH2JF
+
+Client requested ./db/file_32.txt from server
+Client: The contents of the file are 
+Hello! This is file_32.txt || DOP7186616NNY6E6YMCJ
+
+Client requested ./db/file_49.txt from server
+Client: The contents of the file are 
+Hello! This is file_49.txt || RWUN26J17LCBK46FEKJQ
+
+Client requested ./db/file_99.txt from server
+Client: The contents of the file are 
+Hello! This is file_99.txt || 68USNVGUXA5VU1ORL2OH
+
+Client requested ./db/file_58.txt from server
+Client: The contents of the file are 
+Hello! This is file_58.txt || TW53NAZEKX9AC97T77DX
+
+Client requested ./db/file_12.txt from server
+Client: The contents of the file are 
+Hello! This is file_12.txt || AZ855FPA3B6Z1309R5BB
+
+Client requested ./db/file_98.txt from server
+Client: The contents of the file are 
+Hello! This is file_98.txt || 5D6RE3XQ857XVKMOOCYV
+
+Client requested ./db/file_79.txt from server
+Client: The contents of the file are 
+Hello! This is file_79.txt || I7IRLKESZ1ZW230036GL
+
+Client requested ./db/file_21.txt from server
+Client: The contents of the file are 
+Hello! This is file_21.txt || TRIKQTXKHB7F6EB38Y0I
+
+Client requested ./db/file_28.txt from server
+Client: The contents of the file are 
+Hello! This is file_28.txt || 7Q25UFZ6Q9UUTVFP38O9
+
+Client requested ./db/file_22.txt from server
+Client: The contents of the file are 
+Hello! This is file_22.txt || X41PBCJJ0I224T72G5PJ
+
+Client requested ./db/file_31.txt from server
+Client: The contents of the file are 
+Hello! This is file_31.txt || 8RKDEXT795DQ82SAJ8GU
+
+Client requested ./db/file_13.txt from server
+Client: The contents of the file are 
+Hello! This is file_13.txt || UV5LBIRLQ1SL8A9W2S73
+
+Client requested ./db/file_61.txt from server
+Client: The contents of the file are 
+Hello! This is file_61.txt || 8EHM0AKEXFK2GG4CBAV4
+
+Client requested ./db/file_80.txt from server
+Client: The contents of the file are 
+Hello! This is file_80.txt || SAISWGK0H8T5EVJF9GJ8
+
+Client requested ./db/file_36.txt from server
+Client: The contents of the file are 
+Hello! This is file_36.txt || EFT17EITWMAVNPO14E8Y
+
+Client finished 100 file requests in 0.906 milliseconds
+Average Response time: 0.00826 milliseconds
+

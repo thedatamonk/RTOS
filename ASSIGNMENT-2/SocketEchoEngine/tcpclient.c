@@ -8,7 +8,7 @@
 #include <arpa/inet.h>
 #include <time.h>
 
-#define ITERS 1000
+#define ITERS 100000
 #define PORT 4444
 #define BUF_SIZE 1
 #define CHAR_LOW 33
