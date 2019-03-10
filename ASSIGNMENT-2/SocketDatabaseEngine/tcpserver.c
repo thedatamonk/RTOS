@@ -52,7 +52,7 @@ void main(){
 	// maximum number of outstanding connection in the socket queue
 	listen(sockfd, 5);
 
-	for(;;){
+	while(1){
 		//infinite loop to keep the server running
 		len = sizeof(cl_addr);
 
@@ -75,7 +75,7 @@ void main(){
 			// the child will continue to listen.
 			// the main process now handles the connected client
 
-			for(;;){
+			while(1){
 				memset(buffer, 0, BUF_SIZE);
 				ret = recvfrom(newsockfd, buffer, BUF_SIZE, 0, (struct sockaddr *) &cl_addr, &len);
 

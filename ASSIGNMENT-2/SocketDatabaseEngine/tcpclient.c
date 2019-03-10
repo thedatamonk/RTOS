@@ -31,7 +31,7 @@ int main(int argc, char**argv){
   double total_elapsed_time,  avg_response_time = 0.0;
 
   if (argc < 2){
-    printf("usage: client < ip address >\n");
+    printf("usage: server < ip address >\n");
     exit(1);  
   }
 
@@ -54,7 +54,7 @@ int main(int argc, char**argv){
   addr.sin_addr.s_addr = inet_addr(serverAddr);
   addr.sin_port = PORT;
 
-  // try connecting to the server
+  // connecting the client socket to server IP address
   ret = connect(sockfd, (struct sockaddr *) &addr, sizeof(addr));
   if (ret < 0){
       printf("Error connecting to the server!\n");  
@@ -128,11 +128,10 @@ int main(int argc, char**argv){
           buffer[length - 1] = '\0';
 
       
-      // send message to server
 
       start_per_req = clock();
       
-
+      // send a filename to the server IP address
       ret = sendto(sockfd, buffer, BUF_SIZE, 0, (struct sockaddr* )&addr, sizeof(addr));
       
 
@@ -143,6 +142,7 @@ int main(int argc, char**argv){
         printf("Client requested %s from server\n", buffer);
       }       
 
+      // receive the contents of file from server
       ret = recvfrom(sockfd, buffer, BUF_SIZE, 0, NULL, NULL);
 
       if (ret < 0){
@@ -156,8 +156,6 @@ int main(int argc, char**argv){
             printf("%s\n\n", buffer);
         else
             printf ("Client: The contents of the file are \n%s\n\n", buffer);
-
-
       }
 
       i++;

@@ -26,7 +26,7 @@ int main(int argc, char**argv){
   double total_time_elapsed, avg_response_time=0.0;
 
   if (argc < 2){
-    printf("usage: client < ip address >\n");
+    printf("usage: server < ip address >\n");
     exit(1);  
   }
 
@@ -49,7 +49,7 @@ int main(int argc, char**argv){
   addr.sin_addr.s_addr = inet_addr(serverAddr);
   addr.sin_port = PORT;
 
-  // try connecting to the server
+  // connecting the socket to the server IP address
   ret = connect(sockfd, (struct sockaddr *) &addr, sizeof(addr));
   if (ret < 0){
       printf("Error connecting to the server!\n");  
@@ -66,17 +66,23 @@ int main(int argc, char**argv){
   start = clock();
 
   while(t_step < ITERS){
+
+    // generating a random alphanumeric character
     buffer = (rand() % (CHAR_HIGH - CHAR_LOW + 1)) + CHAR_LOW; 
 
 
     start_per_req = clock();
+
+    // send the character to the server IP address
     ret = sendto(sockfd, &buffer, BUF_SIZE, 0, (struct sockaddr*)& addr, sizeof(addr));
+    
     if (ret < 0){
       printf("Error sending data!\n\t-%c", buffer);
     }else{
-      printf("Character sent to server is: %c\n", buffer);
+      printf("Character sent to server IP (%s) is: %c\n", serverAddr, buffer);
     }
 
+    //noe the client receives the data from server through the socket
     ret = recvfrom(sockfd, &buffer, BUF_SIZE, 0, NULL, NULL);  
     if (ret < 0) {  
       printf("Error receiving data!\n");    
@@ -84,7 +90,7 @@ int main(int argc, char**argv){
 
       avg_response_time += ((double) (clock()-start_per_req) / (CLOCKS_PER_SEC / 1000));
 
-      printf("Received converted character from server: %c\n", buffer);
+      printf("Received converted character from server: %c\n\n", buffer);
     }  
 
     t_step++;
