@@ -10,7 +10,7 @@
 #include"string.h"  
 #include"netinet/in.h"  
 #include"netdb.h"
-#include<unistd.h>
+#include <unistd.h>
 #include <arpa/inet.h>
 #include <time.h>
 #include <errno.h>
@@ -47,18 +47,14 @@ static ssize_t loop_write(int fd, const void*data, size_t size) {
 
 
   
-int main(int argc, char**argv) {  
+int main(int argc, char**argv){  
 	 struct sockaddr_in addr, cl_addr;  
 	 int sockfd, ret;  
 	 char buffer[BUF_SIZE];  
 	 struct hostent * server;
 	 char * serverAddr;
 
-	 static const pa_sample_spec ss = {
-		.format = PA_SAMPLE_S16LE,
-		.rate = 44100,
-		.channels = 2
-	 };
+	 static const pa_sample_spec ss = {.format = PA_SAMPLE_S16LE,.rate = 44100,.channels = 2};
 	 pa_simple *s = NULL;
 	 int rett = 1;
 	 int error;
@@ -67,59 +63,55 @@ int main(int argc, char**argv) {
 	 if (!(s = pa_simple_new(NULL, argv[0], PA_STREAM_RECORD, NULL, "record", &ss, NULL, NULL, &error))) {
 		fprintf(stderr, __FILE__": pa_simple_new() failed: %s\n", pa_strerror(error));
 		
-	    }
+	 }
 
 
 	if (argc < 2) {
 	  printf("usage: client < ip address >\n");
 	  exit(1);  
-	 }
+	}
 
-	 serverAddr = argv[1]; 
-	 
-	 sockfd = socket(AF_INET, SOCK_STREAM, 0);  
-	 if (sockfd < 0) {  
+	serverAddr = argv[1]; 
+	sockfd = socket(AF_INET, SOCK_STREAM, 0);  
+
+	if (sockfd < 0) {  
 	  printf("Error creating socket!\n");  
 	  exit(1);  
-	 }  
-	 //printf("Socket created...\n");   
-
-	 memset(&addr, 0, sizeof(addr));  
-	 addr.sin_family = AF_INET;  
-	 addr.sin_addr.s_addr = inet_addr(serverAddr);
-	 addr.sin_port = PORT;     
-
-	 ret = connect(sockfd, (struct sockaddr *) &addr, sizeof(addr));  
-	 if (ret < 0) {  
-	  printf("Error connecting to the server!\n");  
-	  exit(1);  
-	 }  
-	 
-	 
-	 for (;;) {
+	}  
 	
+	// setting important network values
+	memset(&addr, 0, sizeof(addr));  
+	addr.sin_family = AF_INET;  
+	addr.sin_addr.s_addr = inet_addr(serverAddr);
+	addr.sin_port = PORT;     
 
-	    /* Create the recording stream */
-	 
-        uint8_t buf[BUF_SIZE];
+	ret = connect(sockfd, (struct sockaddr *) &addr, sizeof(addr));  
+	if (ret < 0) {  
+		printf("Error connecting to the server!\n");  
+		exit(1); 
+	}  
 
-        /* Record some data ... */
-         if (pa_simple_read(s, buf, sizeof(buf), &error) < 0) {
+	while(1){
+		/* Create the recording stream */
+
+		uint8_t buf[BUF_SIZE];
+
+        /* Record data ... */
+        if (pa_simple_read(s, buf, sizeof(buf), &error) < 0) {
             fprintf(stderr, __FILE__": pa_simple_read() failed: %s\n", pa_strerror(error));
             
         }
 	
 
-        rett = 0;
+        ret = 0;
 
 
 
-	  ret = sendto(sockfd, &buf, BUF_SIZE, 0, (struct sockaddr *) &addr, sizeof(addr));  
-	  if (ret < 0) {  
-	   printf("Error sending data!\n\t-%s", buf);  
-	  }
+	  	ret = sendto(sockfd, &buf, BUF_SIZE, 0, (struct sockaddr *) &addr, sizeof(addr));  
+	  	if (ret < 0) {  
+	  		printf("Error sending data!\n\t-%s", buf);  
+	  	}
 
-	  
 	}
 
 	 return 0;    
